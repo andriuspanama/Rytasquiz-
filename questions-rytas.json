@@ -1,0 +1,1068 @@
+{
+ "_pastaba": "Klausimai apie BC Vilniaus Rytą (duomenys iki 2026 m. liepos). Šaltiniai: Wikipedia, Eurohoops, FIBA, LKL. c – teisingo atsakymo numeris (nuo 0), e – nebūtinas paaiškinimas.",
+ "topics": [
+  {
+   "id": "history",
+   "name": "Istorija: nuo Statybos iki Ryto",
+   "questions": [
+    {
+     "q": "Kuriuo pavadinimu klubas buvo žinomas daugiau nei 30 metų iki 1997 m.?",
+     "a": [
+      "Žalgiris",
+      "Statyba",
+      "Perlas",
+      "Plastikas"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kas 1997 m. nupirko klubą ir pridėjo savo vardą prie pavadinimo?",
+     "a": [
+      "Vilniaus savivaldybė",
+      "Dienraštis „Lietuvos rytas“",
+      "„Pieno žvaigždės“",
+      "Telekomunikacijų bendrovė"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Nuo kurių metų klubas vadinasi tiesiog „Rytas“?",
+     "a": [
+      "2013",
+      "2018",
+      "2021",
+      "2008"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokią vietą Statyba užėmė 1979 m. SSRS čempionate?",
+     "a": [
+      "Trečią",
+      "Penktą",
+      "Antrą",
+      "Pirmą"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kokius medalius Statyba laimėjo pirmajame LKL sezone 1994 m.?",
+     "a": [
+      "Bronzos",
+      "Medalių nelaimėjo",
+      "Sidabro",
+      "Aukso"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Koks yra klubo slapyvardis?",
+     "a": [
+      "Raudonieji kariai",
+      "Juodai baltai raudoni",
+      "Geležiniai vilniečiai",
+      "Sostinės vilkai"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokios yra klubo spalvos?",
+     "a": [
+      "Raudona ir geltona",
+      "Mėlyna ir geltona",
+      "Juoda, balta ir raudona",
+      "Žalia ir balta"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuriais metais Šarūnas Marčiulionis prisijungė prie Statybos?",
+     "a": [
+      "1982",
+      "1994",
+      "1989",
+      "1975"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuris būsimas NBA krepšininkas 1987 m. 16 metų prisijungė prie Statybos?",
+     "a": [
+      "Rimas Kurtinaitis",
+      "Artūras Karnišovas",
+      "Šarūnas Marčiulionis",
+      "Gintaras Einikis"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuris būsimas NBA krepšininkas paauglystėje žaidė „Lietuvos ryto“ Marijampolės komandoje?",
+     "a": [
+      "Linas Kleiza",
+      "Jonas Valančiūnas",
+      "Donatas Motiejūnas",
+      "Darius Songaila"
+     ],
+     "c": 3
+    }
+   ]
+  },
+  {
+   "id": "lkl",
+   "name": "LKL čempionatai",
+   "questions": [
+    {
+     "q": "Kiek LKL čempionatų yra laimėjęs Rytas (iki 2026 m.)?",
+     "a": [
+      "5",
+      "11",
+      "9",
+      "7"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuriais metais Rytas pirmą kartą tapo LKL čempionu?",
+     "a": [
+      "2006",
+      "2002",
+      "1998",
+      "2000"
+     ],
+     "c": 3
+    },
+    {
+     "q": "2000 m. pirmą kartą LKL istorijoje čempionu netapo kuri komanda?",
+     "a": [
+      "Kauno „Žalgiris“",
+      "Klaipėdos „Neptūnas“",
+      "Utenos „Juventus“",
+      "Panevėžio „Lietkabelis“"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kiek rungtynių truko 2002 m. LKL finalo serija, kurios paskutinės rungtynės baigėsi pratęsimu?",
+     "a": [
+      "Tris",
+      "Septynias",
+      "Penkias",
+      "Keturias"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kurią komandą Rytas 2022 m. finale įveikė 4:1 ir tapo čempionu pirmą kartą nuo 2010 m.?",
+     "a": [
+      "„Neptūną“",
+      "„Wolves“",
+      "„Žalgirį“",
+      "„Lietkabelį“"
+     ],
+     "c": 3,
+     "e": "2022 m. birželio 7 d. Rytas laimėjo 79:76."
+    },
+    {
+     "q": "Kiek LKL čempionatų iš eilės prieš 2022 m. buvo laimėjęs „Žalgiris“?",
+     "a": [
+      "9",
+      "11",
+      "7",
+      "15"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuriais metais Rytas paskutinį kartą (iki 2026 m.) tapo LKL čempionu?",
+     "a": [
+      "2022",
+      "2023",
+      "2025",
+      "2024"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris žaidėjas pelnė 33 taškus ir lemiamą dvitaškį 88:87 per 2024 m. LKL finalo ketvirtąsias rungtynes?",
+     "a": [
+      "Gytis Radzevičius",
+      "Marcus Foster",
+      "R. J. Cole",
+      "Ąžuolas Tubelis"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokiu rezultatu Rytas 2025 m. pralaimėjo LKL finalo seriją „Žalgiriui“?",
+     "a": [
+      "1:3",
+      "2:4",
+      "0:3",
+      "2:3"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kas 2025 m. finalo ketvirtųjų rungtynių pabaigoje pelnė pergalingą tritaškį (84:83) „Žalgiriui“?",
+     "a": [
+      "Ignas Brazdeikis",
+      "Sylvain Francisco",
+      "Isaiah Taylor",
+      "Deividas Sirvydis"
+     ],
+     "c": 1
+    }
+   ]
+  },
+  {
+   "id": "europe",
+   "name": "Europos turnyrai",
+   "questions": [
+    {
+     "q": "Kuriais metais Rytas laimėjo pirmąjį Europos trofėjų – ULEB taurę?",
+     "a": [
+      "2009",
+      "2003",
+      "2005",
+      "2007"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kurią komandą Rytas įveikė 2005 m. ULEB taurės finale?",
+     "a": [
+      "„Pamesa Valencia“",
+      "„Khimki“",
+      "„Real Madrid“",
+      "„Makedonikos“"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuri komanda 2007 m. ULEB taurės finale nugalėjo Rytą?",
+     "a": [
+      "„Makedonikos“",
+      "„Khimki“",
+      "„Žalgiris“",
+      "„Real Madrid“"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kurią Rusijos komandą Rytas įveikė 2009 m. Eurocup finale?",
+     "a": [
+      "„Zenit“",
+      "„UNICS“",
+      "„Lokomotiv Kuban“",
+      "„Khimki“"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kas 2009 m. buvo išrinktas Eurocup Final 8 MVP?",
+     "a": [
+      "Steponas Babrauskas",
+      "Chuck Eidson",
+      "Simas Jasaitis",
+      "Marijonas Petravičius"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris NBA patirties turintis žaidėjas 2007 m. padėjo Rytui patekti į ULEB taurės finalą?",
+     "a": [
+      "Kareem Rush",
+      "Tyrone Nesby",
+      "Kenan Bajramović",
+      "Fred House"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kiek Eurolygos pergalių iš eilės 2005–06 sezone pasiekė Rytas, prilygdamas lygos rekordui?",
+     "a": [
+      "7",
+      "4",
+      "12",
+      "9"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Koks buvo Ryto rezultatas 2007–08 Eurolygos reguliariajame sezone, geriausias klubo istorijoje?",
+     "a": [
+      "9:5",
+      "11:3",
+      "12:2",
+      "8:6"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Koks buvo Ryto rezultatas 2013–14 Eurolygos grupėje, blogiausias klubo istorijoje?",
+     "a": [
+      "0:10",
+      "2:8",
+      "3:7",
+      "1:9"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuri NBA komanda 2008 m. spalį „Oracle“ arenoje įveikė Rytą 126:106?",
+     "a": [
+      "„Dallas Mavericks“",
+      "„Chicago Bulls“",
+      "„Toronto Raptors“",
+      "„Golden State Warriors“"
+     ],
+     "c": 3
+    }
+   ]
+  },
+  {
+   "id": "bcl",
+   "name": "2026 m. Čempionų lygos finalas",
+   "questions": [
+    {
+     "q": "Kuriame mieste vyko 2026 m. Čempionų lygos Final Four?",
+     "a": [
+      "Atėnuose",
+      "Stambule",
+      "Vilniuje",
+      "Badalonoje"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuri Graikijos komanda buvo Ryto varžovė finale?",
+     "a": [
+      "„Panathinaikos“",
+      "PAOK",
+      "„Olympiacos“",
+      "AEK"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kokiu rezultatu Rytas laimėjo finalą?",
+     "a": [
+      "92:86 per 40 min.",
+      "86:84",
+      "92:86 po pratęsimo",
+      "80:78"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kokį daugiausia taškų atsilikimą finale Rytas panaikino, kad laimėtų?",
+     "a": [
+      "8",
+      "12",
+      "20",
+      "25"
+     ],
+     "c": 2,
+     "e": "Tai didžiausias atsilikimas, panaikintas čempionato finale."
+    },
+    {
+     "q": "Kas buvo išrinktas finalo MVP?",
+     "a": [
+      "Jerrick Harding",
+      "Artūras Gudaitis",
+      "Simonas Lukošius",
+      "Ignas Sargiūnas"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kiek taškų atsarginis Lukošius pelnė finale?",
+     "a": [
+      "14",
+      "30",
+      "18",
+      "23"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kokio dydžio prizinį fondą gavo laimėtojas?",
+     "a": [
+      "2 000 000 €",
+      "250 000 €",
+      "500 000 €",
+      "900 000 €"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kokią komandą Rytas įveikė pusfinalyje 87:69?",
+     "a": [
+      "„Galatasaray“",
+      "„Nymburk“",
+      "„Unicaja“",
+      "„La Laguna Tenerife“"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris Ryto žaidėjas pusfinalyje pelnė 29 taškus?",
+     "a": [
+      "Jerrick Harding",
+      "Simonas Lukošius",
+      "Gytis Masiulis",
+      "Artūras Gudaitis"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuris AEK žaidėjas buvo išrinktas 2025–26 m. Čempionų lygos MVP?",
+     "a": [
+      "James Nunnally",
+      "Lukas Lekavičius",
+      "Vasilis Charalampopoulos",
+      "Frank Bartley"
+     ],
+     "c": 3
+    }
+   ]
+  },
+  {
+   "id": "lkl2526",
+   "name": "2025–26 m. LKL sezonas",
+   "questions": [
+    {
+     "q": "Koks buvo Ryto rezultatas 2025–26 m. LKL reguliariajame sezone?",
+     "a": [
+      "16 ir 16",
+      "20 pergalių ir 12 pralaimėjimų",
+      "27 ir 5",
+      "24 ir 8"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kurioje vietoje Rytas baigė LKL reguliarųjį sezoną?",
+     "a": [
+      "Pirmoje",
+      "Ketvirtoje",
+      "Antroje",
+      "Trečioje"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuri komanda 2026 m. ketvirtfinalyje nušlavė Rytą?",
+     "a": [
+      "Utenos „Juventus“",
+      "„Neptūnas“",
+      "„Šiauliai“",
+      "„Lietkabelis“"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kokiu rezultatu Rytas pralaimėjo ketvirtfinalio seriją?",
+     "a": [
+      "1:2",
+      "1:3",
+      "0:3",
+      "0:2"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kiek pergalių per 32 reguliariojo sezono rungtynes pasiekė „Žalgiris“?",
+     "a": [
+      "32",
+      "31",
+      "29",
+      "27"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokiu taškų skirtumu Rytas 2025 m. lapkritį laimėjo išvykoje prieš Jonavą (105:71)?",
+     "a": [
+      "28",
+      "22",
+      "40",
+      "34"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Prieš kurią komandą 2025 m. gruodžio 27 d. buvo didžiausias Ryto namų lankomumas LKL (9 186)?",
+     "a": [
+      "„Lietkabelį“",
+      "„Žalgirį“",
+      "„Šiaulius“",
+      "„Neptūną“"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Koks buvo vidutinis Ryto namų lankomumas LKL rungtynėse 2025–26 m.?",
+     "a": [
+      "2 787",
+      "4 200",
+      "6 800",
+      "1 500"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kiek taškų Ignas Sargiūnas pelnė 2026 m. kovo LKL rungtynėse prieš „Lietkabelį“ (96:81)?",
+     "a": [
+      "37",
+      "43",
+      "31",
+      "52"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuris Ryto žaidėjas 2025–26 m. LKL sezone pelnė daugiausia taškų vidutiniškai (17,2)?",
+     "a": [
+      "Ignas Sargiūnas",
+      "Augustas Marčiulionis",
+      "Jerrick Harding",
+      "Artūras Gudaitis"
+     ],
+     "c": 2
+    }
+   ]
+  },
+  {
+   "id": "cup",
+   "name": "2025–26 m.: Čempionų lyga ir taurė",
+   "questions": [
+    {
+     "q": "Koks buvo Ryto pergalių ir pralaimėjimų santykis 2025–26 m. Čempionų lygos reguliariajame etape?",
+     "a": [
+      "6:0",
+      "3:3",
+      "5:1",
+      "4:2"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris žaidėjas namų rungtynėse prieš Heidelbergą 2025 m. lapkritį pelnė 30 taškų?",
+     "a": [
+      "Artūras Gudaitis",
+      "Gytis Radzevičius",
+      "Jerrick Harding",
+      "Jordan Walker"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kiek taškų vidutiniškai per rungtynes Čempionų lygoje pelnė Jerrick Harding?",
+     "a": [
+      "24,0",
+      "19,4",
+      "15,2",
+      "12,6"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuri Čekijos komanda buvo Ryto varžovė Čempionų lygos ketvirtfinalyje?",
+     "a": [
+      "„Opava“",
+      "„Olomoucko“",
+      "„Prostějov“",
+      "„Nymburk“"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris žaidėjas pelnė du baudų metimus ir atnešė pergalę 70:69 ketvirtfinalio išvykoje?",
+     "a": [
+      "Augustas Marčiulionis",
+      "Ignas Sargiūnas",
+      "Simonas Lukošius",
+      "Jerrick Harding"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokiu rezultatu Rytas pralaimėjo 2026 m. Karaliaus Mindaugo taurės finalą?",
+     "a": [
+      "70:96",
+      "90:92",
+      "77:80",
+      "85:101"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuriame mieste vyko 2026 m. Karaliaus Mindaugo taurės Final Four?",
+     "a": [
+      "Vilniuje",
+      "Panevėžyje",
+      "Kaune",
+      "Šiauliuose"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris Ryto žaidėjas pateko į pirmąjį Čempionų lygos Star Lineup penketą?",
+     "a": [
+      "Artūras Gudaitis",
+      "Ignas Sargiūnas",
+      "Jerrick Harding",
+      "Gytis Masiulis"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuriais metais Rytas pradėjo žaisti FIBA Čempionų lygoje?",
+     "a": [
+      "2016",
+      "2022",
+      "2018",
+      "2020"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kiek taškų Rytas pelnė 2025 m. lapkričio namų rungtynėse prieš Heidelbergą Čempionų lygoje?",
+     "a": [
+      "116",
+      "125",
+      "98",
+      "104"
+     ],
+     "c": 0
+    }
+   ]
+  },
+  {
+   "id": "players",
+   "name": "Krepšininkai",
+   "questions": [
+    {
+     "q": "Kuris centras po 2011–12 m. sezono paliko Rytą ir išvyko į NBA?",
+     "a": [
+      "Jonas Valančiūnas",
+      "Antanas Kavaliauskas",
+      "Artūras Gudaitis",
+      "Robertas Javtokas"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuriam žaidėjui Rytas 2025 m. išvedė numerį 5?",
+     "a": [
+      "Steponui Babrauskui",
+      "Šarūnui Jasikevičiui",
+      "Arvydui Macijauskui",
+      "Martynui Gecevičiui"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuriam žaidėjui Rytas 2023 m. išvedė numerį 7?",
+     "a": [
+      "Arvydui Macijauskui",
+      "Ramūnui Šiškauskui",
+      "Renaldui Seibučiui",
+      "Simui Jasaičiui"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuris amerikietis turi išvestą Ryto numerį 13?",
+     "a": [
+      "Fred House",
+      "Kareem Rush",
+      "Chuck Eidson",
+      "Khalid El-Amin"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kiek numerių yra išvedęs Rytas?",
+     "a": [
+      "1",
+      "5",
+      "3",
+      "7"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kurio garsaus krepšininko sūnus Augustas Marčiulionis grįžo į Rytą 2026 m. pavasarį?",
+     "a": [
+      "Valdemaro Chomičiaus",
+      "Arvydo Sabonio",
+      "Šarūno Marčiulionio",
+      "Rimo Kurtinaičio"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuris krepšininkas 2010 m. lapkritį netikėtai pasirašė su Rytu, bet paliko gruodį?",
+     "a": [
+      "Mantas Kalnietis",
+      "Jonas Mačiulis",
+      "Šarūnas Jasikevičius",
+      "Linas Kleiza"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuris Ryto žaidėjas 2009 m. BBL finale prieš „Žalgirį“ pelnė 41 tašką?",
+     "a": [
+      "Marijonas Petravičius",
+      "Chuck Eidson",
+      "Simas Jasaitis",
+      "Steponas Babrauskas"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kas 2025–26 m. sezono pabaigoje buvo Ryto kapitonas?",
+     "a": [
+      "Augustas Marčiulionis",
+      "Gytis Radzevičius",
+      "Artūras Gudaitis",
+      "Ignas Sargiūnas"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuris Ryto auklėtinis 2018–19 m. buvo išrinktas „Eurocup Rising Star“?",
+     "a": [
+      "Deividas Sirvydis",
+      "Tomas Dimša",
+      "Martynas Echodas",
+      "Marek Blaževič"
+     ],
+     "c": 2
+    }
+   ]
+  },
+  {
+   "id": "records",
+   "name": "Rekordai ir skaičiai",
+   "questions": [
+    {
+     "q": "Kiek vietų turi mažesnioji Ryto arena – Active Vilnius Arena?",
+     "a": [
+      "Apie 1 500",
+      "Apie 4 000",
+      "Apie 5 500",
+      "Apie 2 700"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kokia apytikslė didžiosios Vilniaus arenos (Arena Vilnius) talpa?",
+     "a": [
+      "Apie 8 000",
+      "Apie 6 000",
+      "Apie 14 000",
+      "Apie 10 000"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kiek pralaimėjimų iš eilės 2025–26 m. LKL patyrė Rytas – ilgiausia serija klubo istorijoje?",
+     "a": [
+      "9",
+      "3",
+      "7",
+      "5"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Nuo kurių metų Ryto 2025–26 m. LKL reguliarusis sezonas (20:12) buvo prasčiausias?",
+     "a": [
+      "Nuo 2014-ųjų",
+      "Nuo 2005-ųjų",
+      "Nuo 1990-ųjų",
+      "Nuo 1998-ųjų"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Prieš kurią komandą 2026 m. balandį buvo mažiausias Ryto namų lankomumas LKL (1 285)?",
+     "a": [
+      "„Šiaulius“",
+      "Jonavos „Hipocredit“",
+      "„Nevėžį“",
+      "„Gargždus“"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kokiu skirtumu Rytas 2026 m. gegužę pralaimėjo „Lietkabeliui“ (71:96) – didžiausias sezono pralaimėjimas?",
+     "a": [
+      "25 taškais",
+      "18 taškų",
+      "12 taškų",
+      "32 taškais"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Koks buvo didžiausias Ryto lankomumas namų Čempionų lygos rungtynėse 2025–26 m.?",
+     "a": [
+      "10 372",
+      "4 011",
+      "6 120",
+      "8 037"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kiek taškų vidutiniškai per LKL rungtynes pelnė Rytas 2025–26 m. sezone?",
+     "a": [
+      "Apie 98,3",
+      "Apie 86,1",
+      "Apie 80,4",
+      "Apie 92,6"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kiek kartų Statyba laimėjo Lietuvos TSR čempionatą (1972–1984 m.)?",
+     "a": [
+      "4",
+      "6",
+      "9",
+      "2"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kiek Karaliaus Mindaugo taurių (2016 ir 2019 m.) yra laimėjęs Rytas?",
+     "a": [
+      "3",
+      "5",
+      "1",
+      "2"
+     ],
+     "c": 3
+    }
+   ]
+  },
+  {
+   "id": "coaches",
+   "name": "Treneriai ir vadovai",
+   "questions": [
+    {
+     "q": "Kas buvo Ryto vyriausiasis treneris 2025–26 m. sezone?",
+     "a": [
+      "Rimas Kurtinaitis",
+      "Nedas Pacevičius",
+      "Giedrius Žibėnas",
+      "Dainius Adomaitis"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuris treneris 2009 ir 2010 m. išvedė Rytą į LKL čempionatus?",
+     "a": [
+      "Tomo Mahorič",
+      "Neven Spahija",
+      "Giedrius Žibėnas",
+      "Rimas Kurtinaitis"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris kroatas treneris 2005–06 m. vedė Rytą Eurolygoje (septynios pergalės iš eilės)?",
+     "a": [
+      "Zmago Sagadin",
+      "Aleksandar Trifunović",
+      "Dražen Anzulović",
+      "Neven Spahija"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kuris treneris po Vlade Đurovićiaus išvedė Rytą į 2005 m. ULEB taurės titulą?",
+     "a": [
+      "Antanas Sireika",
+      "Neven Spahija",
+      "Tomo Mahorič",
+      "Šarūnas Sakalauskas"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kas yra pagrindinis klubo savininkas?",
+     "a": [
+      "Linas Kleiza",
+      "Darius Gudelis",
+      "Antanas Guoga",
+      "Gedvydas Vainauskas"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuris verslininkas ir europarlamentaras 2017 m. nusipirko 50 % klubo?",
+     "a": [
+      "Remigijus Kazilionis",
+      "Sigitas Židonis",
+      "Antanas Guoga",
+      "Darius Gudelis"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuris buvęs NBA krepšininkas 2017 m. tapo Ryto akcininku ir viceprezidentu?",
+     "a": [
+      "Jonas Valančiūnas",
+      "Žydrūnas Ilgauskas",
+      "Šarūnas Marčiulionis",
+      "Linas Kleiza"
+     ],
+     "c": 3
+    },
+    {
+     "q": "Kas sukūrė klubo himną „Laikas būti pirmiems“?",
+     "a": [
+      "Jurga Šeduikytė",
+      "Vytautas Kernagis",
+      "Marijonas Mikutavičius",
+      "Andrius Mamontovas"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kas 2025–26 m. sezone buvo Ryto komandos vadovas (menedžeris)?",
+     "a": [
+      "Rolandas Jarutis",
+      "Mantvydas Dabašinskas",
+      "Martynas Purlys",
+      "Julius Serapinas"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuris Žibėno asistentas 2026 m. vasarą tapo vyriausiuoju Ryto treneriu?",
+     "a": [
+      "Vesa Vertio",
+      "Mindaugas Brazys",
+      "Nedas Pacevičius",
+      "Gintaras Kadžiulis"
+     ],
+     "c": 2,
+     "e": "Duomenys pagal 2026 m. liepos informaciją – prieš skelbdami patikrinkite."
+    }
+   ]
+  },
+  {
+   "id": "fans",
+   "name": "Arenos, sirgaliai ir jaunimas",
+   "questions": [
+    {
+     "q": "Kurioje arenoje Rytas žaidžia dalį mažesnių namų rungtynių?",
+     "a": [
+      "Active Vilnius Arena",
+      "Žalgirio arena",
+      "Siemens arena",
+      "Švyturio arena"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kurioje Vilniaus arenoje Rytas žaidė didžiąsias tarptautines rungtynes?",
+     "a": [
+      "Utenos arena",
+      "Arena Vilnius",
+      "Kalnų parko arena",
+      "Šiaulių arena"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kaip vadinasi aktyviausi Ryto sirgaliai (Rytas Ultras)?",
+     "a": [
+      "Vilkų gauja",
+      "Raudonoji siena",
+      "B Tribūna",
+      "Juodoji sekcija"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kiek kartų iš eilės 2026 m. Ryto jaunimo komanda laimėjo Jaunimo Čempionų lygą?",
+     "a": [
+      "3",
+      "4",
+      "2",
+      "1"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kurią komandą Rytas 2026 m. nugalėjo Jaunimo Čempionų lygos finale 77:54?",
+     "a": [
+      "„Coretec“",
+      "„Igokea m:tel“",
+      "„Oostende“",
+      "„Telekom Baskets Bonn“"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kaip vadinasi Ryto rezervinė komanda, žaidžianti NKL?",
+     "a": [
+      "Perlas Jaunimas",
+      "Rytas-2",
+      "Vilnius-B",
+      "Statyba-2"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuriais metais įkurta komanda „Perlas“, dabar vadinama Rytas-2?",
+     "a": [
+      "2015",
+      "1997",
+      "2003",
+      "2008"
+     ],
+     "c": 2
+    },
+    {
+     "q": "Kuri Vilniaus arena iki 2020 m. buvo Ryto didžiųjų rungtynių namai pagal sutartį?",
+     "a": [
+      "Siemens arena",
+      "Avia Solutions arena",
+      "Kalnų parko arena",
+      "Lietuvos ryto arena"
+     ],
+     "c": 0
+    },
+    {
+     "q": "Kuri kita sostinės komanda po 2023–24 m. sezono sustabdė veiklą?",
+     "a": [
+      "„Perlas“",
+      "„Wolves“",
+      "„Vilniaus ryto“",
+      "„Statyba“"
+     ],
+     "c": 1
+    },
+    {
+     "q": "Kuriuo klubo pavadinimu Rytas buvo žinomas 1998–2018 m.?",
+     "a": [
+      "„Lietuvos rytas“",
+      "„Statyba“",
+      "„Vilniaus rytas“",
+      "„Rytas-Vilnius“"
+     ],
+     "c": 0
+    }
+   ]
+  }
+ ]
+}
