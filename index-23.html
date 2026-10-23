@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="lt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Krepšinio viktorina</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Doto:wght@500;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#07090F;--card:#0F1420;--line:#1E2638;--ink:#E8ECF4;--mu:#98a3bb;--a:#FFB020;--ok:#3DF5B0;--no:#FF5C73;--hd:'Barlow Condensed','Arial Narrow',sans-serif;--mo:'JetBrains Mono',monospace;--led:'Doto','JetBrains Mono',monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:url(bg.jpg) center/cover;filter:grayscale(.55) brightness(.42) blur(1.5px);opacity:.6}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+h1{font:700 42px/1 var(--hd);margin:6px 0 12px}h2{font:600 26px/1.2 var(--hd);margin:0 0 14px}
+.led{font-family:var(--led);font-weight:800;color:var(--a);text-shadow:0 0 6px rgba(255,176,32,.7),0 0 20px rgba(255,176,32,.3)}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.cell{background:#05070b radial-gradient(rgba(255,176,32,.13) 1px,transparent 1.5px) 0 0/5px 5px;border:1px solid #3a2d0c;border-radius:12px;padding:8px 12px;text-align:center}
+.cell small{display:block;color:#8a93a8;font-size:12px;letter-spacing:.08em}.cell b{font-size:34px;line-height:1.15;white-space:nowrap}
+.card{background:rgba(15,20,32,.88);border:1px solid var(--line);border-radius:16px;padding:16px;backdrop-filter:blur(4px);position:relative;overflow:hidden}
+.btn,.chip{font:inherit;color:var(--ink);background:rgba(15,20,32,.9);border:1px solid var(--line);border-radius:12px;padding:12px 16px;cursor:pointer;text-align:left}
+.btn:hover,.chip:hover{border-color:var(--a)}
+.go{background:var(--a);color:#1a1200;border:0;font:700 22px var(--hd);width:100%;text-align:center;margin-top:12px;padding:14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.chip{border-radius:99px;padding:7px 14px}
+.chip[aria-pressed=true]{background:var(--a);color:#1a1200;border-color:var(--a);font-weight:600}
+.ans{display:grid;gap:10px}.ans .btn{font-size:18px;display:flex;gap:12px}.ans b{font-family:var(--mo);color:var(--a)}
+.ans .ok{border-color:var(--ok);background:rgba(61,245,176,.15)}.ans .no{border-color:var(--no);background:rgba(255,92,115,.15);animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-bottom:10px}.bar i{display:block;height:100%;background:var(--a);width:100%}
+#rx{position:absolute;inset:0;background:rgba(5,7,11,.95);display:grid;place-items:center;text-align:center;font:600 26px/1.3 var(--hd);z-index:2}
+#rx .led{font-size:36px}
+#hd{position:absolute;width:min(26vmin,130px);border-radius:50%;box-shadow:0 0 0 3px var(--a),0 0 30px rgba(255,176,32,.5);cursor:pointer;animation:pop .3s cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{from{transform:scale(0) rotate(-20deg)}}
+.wr{color:var(--mu);font-size:14px;margin:6px 0}.wr b{color:var(--ok)}
+.cel{position:fixed;inset:0;z-index:50;pointer-events:none;transition:opacity .6s}.cel.out{opacity:0}.cel canvas#fx{position:absolute;inset:0;width:100%;height:100%}
+.cb{position:absolute;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:flex-end;gap:16px;background:#05070b;border:1px solid #4a3a10;border-radius:20px;padding:12px 20px 12px 12px;max-width:calc(100vw - 20px);animation:ci .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes ci{from{transform:translate(-50%,40px);opacity:0}}
+.ph{pointer-events:auto;border:0;padding:0;background:none;line-height:0;cursor:pointer}.ph canvas{height:min(42vh,340px);width:auto;max-width:min(420px,60vw);border-radius:14px}
+.bub small{display:block;color:#aab3c6;font-weight:600}.bub b{font-size:clamp(32px,6vw,56px);white-space:nowrap}
+.fail::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,transparent 22%,rgba(5,10,30,.66))}
+.fail .ph canvas{animation:sag 2.6s ease-in forwards}@keyframes sag{to{transform:translateY(12px) rotate(-2.5deg)}}
+.fail .bub b{color:var(--no);text-shadow:0 0 8px rgba(255,92,115,.7);animation:fl 1.8s steps(1) infinite}@keyframes fl{44%{opacity:.25}47%{opacity:.8}70%{opacity:.4}72%{opacity:1}}
+@media(max-width:620px){.cb{flex-direction:column;align-items:center}.ph canvas{height:auto;width:min(76vw,360px);max-height:36vh}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+[hidden]{display:none!important}
+</style></head><body>
+<div class="wrap">
+<h1>Krepšinio viktorina</h1>
+
+<div id="home" class="card">
+ <div id="camp"></div>
+ <h2 style="margin-top:22px">Greitas žaidimas</h2><p>Per <b>60 sekundžių</b> atsakyk į kuo daugiau klausimų. Teisingas atsakymas – +1 taškas, klaida – −3 s. Kas 3 teisingi atsakymai – <b>reakcijos iššūkis</b>: kuo greičiau paliesk galvą ir gausi iki +6 s laiko. Pasiekus 10 teisingų – <b>arkadinis bonusas</b> (+10 s).</p>
+ <div id="tp" class="chips"></div>
+ <div class="board"><div class="cell"><small>REKORDAS</small><b class="led" id="best">00</b></div></div>
+ <button class="btn go" id="start" style="background:none;color:var(--ink);border:1px solid var(--line)">Greitas žaidimas</button>
+</div>
+
+<div id="play" hidden>
+ <div class="board">
+  <div class="cell"><small>LAIKAS</small><b class="led" id="tm">60</b></div>
+  <div class="cell"><small>TAŠKAI</small><b class="led" id="sc">00</b></div>
+  <div class="cell"><small>SERIJA</small><b class="led" id="st">00</b></div>
+ </div>
+ <div class="bar"><i id="bar"></i></div>
+ <div class="card" style="min-height:360px">
+  <h2 id="qt"></h2><div class="ans" id="an"></div>
+  <div id="rx" hidden><div id="rt"></div><img id="hd" src="head.png" alt="" hidden></div>
+ </div>
+</div>
+
+<div id="end" class="card" hidden></div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s),pad=n=>String(n).padStart(2,"0"),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LS=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}};
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const FALLBACK={topics:[{name:"Bendra",questions:[
+ {q:"Kiek žaidėjų vienos komandos būna aikštėje?",a:["4","5","6","7"],c:1},
+ {q:"Kiek taškų vertas baudos metimas?",a:["1","2","3","4"],c:0},
+ {q:"Kas išrado krepšinį?",a:["James Naismith","Michael Jordan","Phog Allen","Pierre de Coubertin"],c:0},
+ {q:"Kuriais metais išrastas krepšinis?",a:["1861","1891","1921","1946"],c:1}]}]};
+let TOP=[],S={},PX=LS("px")!=="0";
+
+fetch("questions.json").then(r=>r.json()).catch(()=>FALLBACK).then(d=>{TOP=d.topics;
+ $("#tp").innerHTML=TOP.map((t,i)=>`<button class="chip" data-i="${i}" aria-pressed="true">${esc(t.name)} · ${t.questions.length}</button>`).join("")});
+$("#tp").onclick=e=>{const c=e.target.closest(".chip");if(c)c.setAttribute("aria-pressed",c.getAttribute("aria-pressed")!=="true")};
+const bestUp=()=>$("#best").textContent=pad(+LS("qb")||0);bestUp();
+
+function start(){
+ const sel=[...document.querySelectorAll("#tp .chip[aria-pressed=true]")].map(c=>+c.dataset.i);let qs=[];
+ (sel.length?sel:TOP.map((_,i)=>i)).forEach(i=>qs=qs.concat(TOP[i].questions));
+ S={t:60,score:0,streak:0,ok:0,wrong:[],rx:[],run:true,pause:false,lock:true,pool:shuf(qs),i:0,rxAt:0};
+ $("#home").hidden=true;$("#end").hidden=true;$("#play").hidden=false;upd();showQ();
+ let last=performance.now();
+ (function loop(n){if(!S.run)return;const d=(n-last)/1e3;last=n;if(!S.pause)S.t-=Math.min(d,.25);
+  if(S.t<=0){S.t=0;upd();return end()}upd();requestAnimationFrame(loop)})(last);
+}
+function upd(){$("#tm").textContent=pad(Math.ceil(S.t));$("#bar").style.width=Math.min(100,S.t/60*100)+"%";$("#tm").style.color=S.t<10?"var(--no)":"";$("#sc").textContent=pad(S.score);$("#st").textContent=pad(S.streak)}
+function showQ(){
+ if(S.i>=S.pool.length){S.pool=shuf(S.pool);S.i=0}
+ const q=S.q=S.pool[S.i++];S.map=shuf(q.a.map((_,i)=>i));S.lock=false;
+ $("#qt").textContent=q.q;
+ $("#an").innerHTML=S.map.map((j,k)=>`<button class="btn" data-k="${k}"><b>${k+1}</b>${esc(q.a[j])}</button>`).join("");
+}
+function answer(k){
+ if(S.lock||!S.run)return;S.lock=true;const q=S.q,good=S.map[k]===q.c,bs=[...document.querySelectorAll("#an .btn")];
+ if(good){S.score++;S.streak++;S.ok++;bs[k].classList.add("ok")}
+ else{S.t-=3;S.streak=0;S.wrong.push(q);bs[k].classList.add("no");bs[S.map.indexOf(q.c)].classList.add("ok")}
+ upd();setTimeout(next,good?300:650);
+}
+function next(){if(!S.run)return;if(S.ok&&S.ok%3===0&&S.rxAt!==S.ok){S.rxAt=S.ok;return react()}
+ if(S.ok===10&&!S.bon&&window.arcade&&!window.CAMP){S.bon=1;S.pause=true;S.lock=true;return arcade(2,ok=>{S.pause=false;if(ok)S.t+=10;upd();showQ()},1)}
+ showQ()}
+const bonus=ms=>ms<350?6:ms<500?4:ms<700?3:ms<1000?2:1;
+function react(){
+ S.lock=true;S.pause=true;const r=$("#rx"),h=$("#hd"),t=$("#rt");r.hidden=false;h.hidden=true;
+ t.innerHTML='Reakcijos iššūkis<br><span class="led">PASIRUOŠK…</span>';let armed=0,done=0,t0=0;
+ const fin=m=>{if(done)return;done=1;h.hidden=true;S.pause=false;t.innerHTML=m;upd();setTimeout(()=>{r.hidden=true;next()},950)};
+ r.onclick=()=>{if(!armed&&!done){S.t-=2;fin('Per anksti!<br><span class="led">−2 s</span>')}};
+ setTimeout(()=>{if(done)return;armed=1;h.style.left=(8+Math.random()*60)+"%";h.style.top=(15+Math.random()*50)+"%";h.hidden=false;t.textContent="LIESK GALVĄ!";t0=performance.now();
+  h.onclick=e=>{e.stopPropagation();if(done)return;const ms=Math.round(performance.now()-t0),b=bonus(ms);S.t+=b;S.rx.push(ms);fin(`${ms} ms<br><span class="led">+${b} s</span>`)};
+  setTimeout(()=>fin("Pavėlavai"),2000)},700+Math.random()*1200);
+}
+function end(){
+ S.run=false;$("#play").hidden=true;const e=$("#end");e.hidden=false;
+ const best=+LS("qb")||0,rec=S.score>best&&S.score>0;if(rec)LS("qb",S.score);bestUp();
+ const avg=S.rx.length?Math.round(S.rx.reduce((a,b)=>a+b)/S.rx.length):0;
+ e.innerHTML=`<h2>Laikas baigėsi</h2><div class="board"><div class="cell"><small>TAŠKAI</small><b class="led">${pad(S.score)}</b></div><div class="cell"><small>REKORDAS</small><b class="led">${pad(Math.max(best,S.score))}</b></div><div class="cell"><small>REAKCIJA</small><b class="led">${avg||"--"}</b></div></div>
+ ${S.wrong.slice(0,5).map(q=>`<div class="wr">${esc(q.q)} <b>${esc(q.a[q.c])}</b>${q.e?" – "+esc(q.e):""}</div>`).join("")}
+ <button class="btn go" id="again">Žaisti dar kartą</button><button class="btn go" id="shr" style="background:none;color:var(--ink);border:1px solid var(--line)">Dalintis</button>`;
+ $("#again").onclick=()=>{e.hidden=true;start()};
+ $("#shr").onclick=()=>{const x=`Viktorina: ${S.score} taškai per minutę! ${location.href}`;navigator.share?navigator.share({text:x}).catch(()=>{}):navigator.clipboard&&navigator.clipboard.writeText(x)};
+ if(!window.CAMP)stage(rec,pad(S.score));
+}
+$("#an").onclick=e=>{const b=e.target.closest(".btn");if(b)answer(+b.dataset.k)};
+$("#start").onclick=start;
+addEventListener("keydown",e=>{if(/^[1-4]$/.test(e.key)&&!$("#play").hidden)answer(+e.key-1)});
+
+/* ---- Pranešėjai: rekordas (fejerverkai) / nesėkmė (lietus) ---- */
+function led(cv,img,sad){
+ const x=cv.getContext("2d"),W=cv.width,H=cv.height;x.fillStyle="#05070b";x.fillRect(0,0,W,H);
+ if(!PX){x.drawImage(img,0,0,W,H);return}
+ const N=46,M=Math.round(N*H/W),t=document.createElement("canvas");t.width=N;t.height=M;const u=t.getContext("2d");u.drawImage(img,0,0,N,M);
+ const d=u.getImageData(0,0,N,M).data,k=W/N;
+ for(let y=0;y<M;y++)for(let i=0;i<N;i++){const o=(y*N+i)*4;let r=d[o],g=d[o+1],b=d[o+2];const l=(.3*r+.59*g+.11*b)/255;
+  if(sad){const L=l*255;r=r*.35+L*.5;g=g*.4+L*.6;b=b*.35+L*.9}
+  const dx=(i+.5)/N-.5,dy=(y+.5)/M-.5,m=(.22+.95*l**.8)*Math.max(0,1-(Math.hypot(dx,dy)/.72)**2.6),f=v=>Math.min(255,v*1.35*m+6|0);
+  x.fillStyle=`rgb(${f(r)},${f(g)},${f(b)})`;x.beginPath();x.arc(i*k+k/2,y*k+k/2,k*.43,0,6.3);x.fill()}
+}
+function fx(win){
+ const c=$("#fx"),W=c.width=innerWidth,H=c.height=innerHeight,x=c.getContext("2d"),P=[],C=["#FFB020","#FF5C73","#3DF5B0","#E8ECF4","#4DA3FF"],t0=performance.now();let n=0,nx=0,go=1;
+ if(!win)for(let i=0;i<150;i++)P.push({x:Math.random()*W,y:Math.random()*H,v:3+Math.random()*3,l:8+Math.random()*10});
+ (function f(t){if(!go)return;const d=t-t0;x.clearRect(0,0,W,H);
+  if(win){
+   if(d>nx&&n<7){const cx=W*(.15+Math.random()*.7),cy=H*(.12+Math.random()*.35),col=C[Math.random()*5|0];
+    for(let i=0;i<50;i++){const a=i/50*6.28,v=2+Math.random()*3;P.push({x:cx,y:cy,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:col})}n++;nx+=380}
+   for(let i=P.length-1;i>=0;i--){const p=P[i];p.x+=p.vx;p.y+=p.vy;p.vy+=.045;p.l-=.012;if(p.l<=0){P.splice(i,1);continue}x.globalAlpha=p.l;x.fillStyle=p.c;x.fillRect(p.x|0,p.y|0,5,5)}
+   x.globalAlpha=1;if(d<4200||P.length)requestAnimationFrame(f)
+  }else{x.fillStyle="rgba(130,165,235,.5)";for(const p of P){p.y+=p.v;if(p.y>H)p.y=-20;x.fillRect(p.x|0,p.y|0,2,p.l)}requestAnimationFrame(f)}
+ })(t0);
+ return()=>{go=0};
+}
+function stage(win,num,t1,t2){
+ const k=win?"w":"f",c=+(LS("n"+k)||0);LS("n"+k,c+1);
+ const img=new Image(),o=document.createElement("div");o.className="cel"+(win?"":" fail");
+ o.innerHTML=`<canvas id="fx"></canvas><div class="cb"><button class="ph" type="button"><canvas width="480" height="360"></canvas></button><div class="bub">${win?`<small>${t1||"Naujas rekordas!"}</small><b class="led">${num}</b>`:`<small>${t1||"Laikas baigėsi"}</small><b class="led">NEPAVYKO</b><small>${t2||"Taškai "+num}</small>`}</div></div>`;
+ document.body.appendChild(o);
+ const cv=o.querySelector(".ph canvas"),fb=()=>{cv.width=480;cv.height=360;const c=cv.getContext("2d");c.fillStyle="#05070b";c.fillRect(0,0,480,360);c.font="190px serif";c.textAlign="center";c.textBaseline="middle";c.fillText(win?"🏆":"😢",240,190)},draw=()=>{try{cv.height=Math.round(480*img.naturalHeight/img.naturalWidth);led(cv,img,!win)}catch(e){fb()}};
+ fb();img.onerror=fb;img.onload=draw;img.src="ann-"+k+(c%2+1)+".jpg";
+ const stop=matchMedia("(prefers-reduced-motion:reduce)").matches?()=>{}:fx(win);
+ o.querySelector(".ph").onclick=()=>{PX=!PX;LS("px",PX?"1":"0");draw()};
+ setTimeout(()=>o.classList.add("out"),5200);setTimeout(()=>{stop();o.remove()},5800);
+}
+</script>
+<script src="arcade.js"></script></body></html>
